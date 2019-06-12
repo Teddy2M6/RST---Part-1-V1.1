@@ -3259,6 +3259,33 @@ function scene:show( event )
 	print(playerAmount4)
 	print(playerAmount5)
 	print(playerAmount6)
+			
+	if playerTotal > 21 then 
+	 	
+	 	if playerAmount1 == 11  then
+	 		playerAmount1 = 1
+	 	end
+	 	
+	 	if playerAmount2 == 11  then
+	 		playerAmount2 = 1
+	 	end
+	 	
+	 	if playerAmount3 == 11  then
+	 		playerAmount3 = 1
+	 	end
+	 	
+	 	if playerAmount4 == 11  then
+	 		playerAmount4 = 1
+	 	end
+	 	
+	 	if playerAmount5 == 11  then
+	 		playerAmount5 = 1
+	 	end
+	 	
+	 	if playerAmount6 == 11  then
+	 		playerAmount6 = 1
+	 	end
+	end
 
 	bustText = display.newText( "", 160, 240, native.systemFont, 40 )
 	bustText:setFillColor( 0/255, 0/255, 0/255 )
